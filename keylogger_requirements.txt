@@ -1,0 +1,3 @@
+requirements:
+  download "pynput" with pip3
+  "pip3 install pynput"
