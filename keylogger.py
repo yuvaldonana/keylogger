@@ -32,6 +32,7 @@ def on_press(key):
         f = open("barcode.barcodes", "w")
         f.write(str(test))
         f.close()
+        barcode.clear()
         current_time = datetime.now()
         x = threading.Thread(target=thread_function, args=(current_time,))
         x.start()
