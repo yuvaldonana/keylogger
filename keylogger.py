@@ -10,7 +10,10 @@ barcode = []
 i = 0
 count = 0
 current_time = 0
-    
+
+print("listnig for key press")
+
+
 def thread_function(update_time):
     print(update_time, current_time)
     time.sleep(20)
@@ -49,3 +52,4 @@ def on_release(key):
 
 with Listener(on_press=on_press, on_release=on_release) as listener:
     listener.join()
+    
